@@ -12,6 +12,7 @@ public class mountainArray {
                 start = mid + 1;
             }
         }
+        // we can either return start or end as both are going to be equal
         return start;
     }
 }
