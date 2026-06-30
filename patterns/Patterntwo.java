@@ -1,4 +1,4 @@
-// package patterns;
+package patterns;
 
 public class Patterntwo {
     public static void main(String[] args) {
