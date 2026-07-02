@@ -239,56 +239,274 @@ public class patterns {
         // }
 
         //hollow diamond code
-        for (int row = 1; row <= n; row++) {
-            // if(row==n){
-            //     continue;
-            // }
-            for (int spa = 1; spa <= n - row; spa++) {
-                System.out.print("  ");
-            }
-            if (row == 1) {
-                for (int col = 1; col <= (row * 2 - 1); col++) {
-                    System.out.print("* ");
-                }
-            } else {
-                // after the topmost spaces we will print stars
-                System.out.print("* ");
-                // space
-                for (int sp = 1; sp <= (row * 2 - 3); sp++) {
-                    System.out.print("  ");
-                }
-                // last star
-                System.out.print("* ");
-            }
-            System.out.println();
-        }
+        // for (int row = 1; row <= n; row++) {
+        //     // if(row==n){
+        //     //     continue;
+        //     // }
+        //     for (int spa = 1; spa <= n - row; spa++) {
+        //         System.out.print("  ");
+        //     }
+        //     if (row == 1) {
+        //         for (int col = 1; col <= (row * 2 - 1); col++) {
+        //             System.out.print("* ");
+        //         }
+        //     } else {
+        //         // after the topmost spaces we will print stars
+        //         System.out.print("* ");
+        //         // space
+        //         for (int sp = 1; sp <= (row * 2 - 3); sp++) {
+        //             System.out.print("  ");
+        //         }
+        //         // last star
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
 
-        //inverted hollow pyramid pattern
+        // //inverted hollow pyramid pattern
+        // for(int row=1; row<=n; row++){
+        //     if(row==1){
+        //         continue;
+        //     }
+        //     // spaces
+        //     for(int spa= 1; spa<=row-1; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     if(row == 1 || row == n){
+        //         // full stars to be printed
+        //         for(int col = 1; col<=2*n-row-(row-1); col++){
+        //             System.out.print("* ");
+        //         }
+        //     }
+        //     else{
+        //         System.out.print("* ");
+        //         // spaces
+        //         for(int sp= 1; sp<=2*(n-row)-1; sp++){
+        //             System.out.print("  ");
+        //         }
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //another big patter program
+        //part 1 is right angle pattern
+        // for(int row =1; row<=n; row++){
+        //     for(int col = 1; col<=row; col++){
+        //         System.out.print("* ");
+        //     }
+
+        //     //part 2 spaces
+        //     for(int spa=1; spa<=(n-row)*2; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     //part 3 opp right angle triangle
+        //     for(int col = 1; col<=row; col++){
+        //         System.out.print("* ");
+        //     }
+            
+        //     System.out.println();
+        // }
+        // //for the downward parts
+        
+        // for(int row=1; row<=n; row++){
+        //     //part 4
+        //     for(int col=1; col<=n-row+1; col++){
+        //         System.out.print("* ");
+        //     }
+        //     //part 5
+        //     for(int spa=1; spa<=(row-1)*2; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     //part 6
+        //     for(int col=1; col<=n-row+1; col++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //now number patterns, but this one is right angle type
+        // for(int row=1; row<=n; row++){
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print(col + " ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //another number pattern
+        // int count = 1;
+        // for(int row=1; row<=n; row++){
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print(count+" ");
+        //         count++;
+        //     }
+            
+        //     System.out.println();
+        // }
+
+        //alphabet pattern
+        // for(int row=1; row<=n; row++){
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print((char)(col + 64)+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //reverse alphabet pattern
+        // for(int row=1; row<=n; row++){
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print((char)((65+n)-col)+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //another pyramid which is sand clock like pattern
+        //inverted pyramid
+        // for (int row = 1; row <= n; row++) {
+        //     // for spaces, part 1
+        //     for (int spa = 1; spa <= (row - 1); spa++) {
+        //         System.out.print("  ");// we will use two spaces to make the pyramid look good, because one space will
+        //                               // affect the star with one more space
+        //     }
+        //     // for stars, part 2
+        //     for (int col = 1; col <= (2 * n - row - (row - 1)); col++) {
+        //         System.out.print("* "); // this line here
+        //     }
+        //     System.out.println();
+        // }
+        // //normal pyramid program
+        // // for rows
+        // for (int row = 1; row <= n; row++) {
+        //     if(row==1){
+        //         continue;
+        //     }
+        //     // for spaces, part 1
+        //     for (int spa = 1; spa <= (n - row); spa++) {
+        //         System.out.print("  ");// we will use two spaces to make the pyramid look good, because one space will
+        //                               // affect the star with one more space
+        //     }
+        //     // for stars, part 2
+        //     for (int col = 1; col <= (2 * row - 1); col++) {
+        //         System.out.print("* "); // this line here
+        //     }
+        //     System.out.println();
+        // }
+
+        //number pattern in pyramid shape
+        // for(int row=1; row<=n; row++){
+        //     //part 1 is spaces
+        //     for(int spa=1; spa<=n-row; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     //part 2 numbers
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print(col+" ");
+        //     }
+        //     //part 3 numbers in reverse order
+        //     for(int col=row-1; col>=1; col--){    //reverse order
+        //         System.out.print(col+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //another pattern
+        // for(int row=1; row<=n; row++){
+        //     //for spaces
+        //     for(int spa=1; spa<=n-row; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     //for numbers
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print(row+" ");
+        //     }
+        //     //part 3 pattern
+        //     for(int col=row-1; col>=1; col--){
+        //         System.out.print(row+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //another 
+        // for(int row=1; row<=n; row++){
+        //     //for spaces
+        //     for(int spa=1; spa<=n-row; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     //for numbers
+        //     for(int col=n; col>=n-row+1; col--){
+        //         System.out.print(col+" ");
+        //     }
+        //     //part 3 pattern
+        //     for(int col=2; col<=row; col++){
+        //         System.out.print(col+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //alphabet pyramid pattern
+        // for(int row=1; row<=n; row++){
+        //     //for spaces
+        //     for(int spa=1; spa<=n-row; spa++){
+        //         System.out.print("  ");
+        //     }
+        //     //for alphabets
+        //     for(int col=1; col<=row; col++){
+        //         System.out.print((char)(64+col)+" ");
+        //     }
+        //     //part 3 pattern
+        //     for(int col=row-1; col>=1; col--){
+        //         System.out.print((char)(64+col)+" ");
+        //     }
+        //     System.out.println();
+        // }
+
+        //zig zag pattern
         for(int row=1; row<=n; row++){
-            if(row==1){
-                continue;
-            }
-            // spaces
-            for(int spa= 1; spa<=row-1; spa++){
+            //part1 is spaces
+            for(int spa=1; spa<=n-row; spa++){
                 System.out.print("  ");
             }
-            if(row == 1 || row == n){
-                // full stars to be printed
-                for(int col = 1; col<=2*n-row-(row-1); col++){
+            //part2 hollow pyramid
+            if(row==1){
+                for(int col=1; col<=row*2-1; col++){
                     System.out.print("* ");
                 }
             }
             else{
                 System.out.print("* ");
-                // spaces
-                for(int sp= 1; sp<=2*(n-row)-1; sp++){
+                for(int sp=1; sp<=row*2-3; sp++){
                     System.out.print("  ");
                 }
                 System.out.print("* ");
             }
+            //part 3 spaces
+            for(int spa=1;spa<=2*(n-row); spa++){
+                System.out.print("  ");
+            }
+            //part 4 hollow pyramid
+            if(row==1){
+                for(int col=1; col<=row*2-1; col++){
+                    System.out.print("* ");
+                }
+            }
+            else{
+                if(row==n){
+                    for(int spa=1; spa<=4; spa++){
+                        System.out.print("  ");
+                    }
+                    System.out.print("* ");
+                }
+                else{
+                    System.out.print("* ");
+                    for(int sp=1; sp<=row*2-3; sp++){
+                        System.out.print("  ");
+                    }
+                    System.out.print("* ");
+                }
+            }
+
+            
             System.out.println();
         }
-
-
     }
 }
